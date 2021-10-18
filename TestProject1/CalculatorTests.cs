@@ -13,7 +13,7 @@ namespace TestProject1
             var one = 1;
             var two = 2;
             var actual = _calculator.Add(one, two);
-            Assert.Equal(3, actual);
+            Assert.Equal(0, actual);
         }
 
         [Fact]
