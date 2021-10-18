@@ -2,6 +2,12 @@
 {
     public class Calculator
     {
+        /// <summary>
+        ///     add some comment
+        /// </summary>
+        /// <param name="one"></param>
+        /// <param name="two"></param>
+        /// <returns></returns>
         public int Add(int one, int two)
         {
             var transform = one switch
