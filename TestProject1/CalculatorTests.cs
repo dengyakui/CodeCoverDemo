@@ -9,7 +9,7 @@ namespace TestProject1
 
         [Theory]
         [InlineData(1, 2, 1)]
-        [InlineData(0, 2, 1)]
+        [InlineData(0, 2, 2)]
         public void Test_Add(int one, int two, int expected)
         {
             var actual = _calculator.Add(one, two);
