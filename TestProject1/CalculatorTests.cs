@@ -7,13 +7,15 @@ namespace TestProject1
     {
         private readonly Calculator _calculator = new();
 
-        [Fact]
-        public void Test_Add()
+        [Theory]
+        [InlineData(1, 2, 1)]
+        [InlineData(0, 2, 2)]
+        [InlineData(2, 2, 0)]
+        [InlineData(3, 2, -1)]
+        public void Test_Add(int one, int two, int expected)
         {
-            var one = 1;
-            var two = 2;
             var actual = _calculator.Add(one, two);
-            Assert.Equal(3, actual);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
